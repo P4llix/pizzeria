@@ -83,8 +83,9 @@ a:link{
     padding-top: 10vh;
     font-size: 17px;
     overflow: hidden;
-    transition: 0.5s;
+    transition: .5s;
     opacity: 0;
+    display: inline-block;
 }
 
 .lewy .liczenie input{

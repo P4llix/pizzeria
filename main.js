@@ -44,15 +44,17 @@ if(liczba1){
 
 function wysuwanie(){
     document.getElementById("odleglosc").value = "";
-    if(document.getElementById("liczenie").style.opacity = "0"){
+    document.getElementById("liczenie").style.visibility = "visible";
+        if(document.getElementById("liczenie").style.opacity = "0"){
         document.getElementById("liczenie").style.opacity = "1";
     }
 }
 
 function wygasz() {
+    
+    document.getElementById("liczenie").style.visibility = "hidden";
     document.getElementById("liczenie").style.opacity = "0";
     document.getElementById("koszt").style.opacity = "0";
-
 }
 
 
