@@ -35,6 +35,9 @@ if(liczba1){
     else if (liczba1 > 10){
         var koszt = "Koszt wynosi 10zł";
     }
+    else if (liczba1 > 50){
+        var koszt = "Za daleko od pizzeri";
+    }
     document.getElementById("wynik").innerHTML = "<p id='koszt'>" + koszt + "</p>";
 }
 })
