@@ -32,7 +32,7 @@ if(liczba1){
     else if (liczba1 >= 3 && liczba1 <= 10){
         var koszt = "Koszt wynosi 5zł";
     }
-    else if (liczba1 > 10){
+    else if (liczba1 > 10 && liczba1 <=50){
         var koszt = "Koszt wynosi 10zł";
     }
     else if (liczba1 > 50){
@@ -43,6 +43,7 @@ if(liczba1){
 })
 
 function wysuwanie(){
+    document.getElementById("odleglosc").value = "";
     if(document.getElementById("liczenie").style.opacity = "0"){
         document.getElementById("liczenie").style.opacity = "1";
     }
