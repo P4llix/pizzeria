@@ -82,14 +82,11 @@ function showSlides() {
 
 function dodawanie(x){
 
-   function wyswietlanie(){
-        document.getElementById("zamowienie").innerHTML += x+" zł<br>";
-   }
-   wyswietlanie(x);
-   parseFloat(x);
-   eval(x);
-   var suma = 0;
-   suma += Number(x);
-   document.getElementById("zaplata").innerHTML = suma;
+    document.getElementById("zamowienie").innerHTML += x+" zł<br>";
+
+
+    var rob = document.getElementById("zaplata").innerHTML;
+    
+    document.getElementById("zaplata").innerHTML = Number(rob) + parseFloat(x);;
 }
 
