@@ -311,3 +311,23 @@ table{
 .cena{
     cursor: pointer;
 }
+
+
+#suma{
+    position: absolute;
+    bottom: 40px;
+    border-top: 1px solid white;
+    width: 20%;
+    padding-top: 2vh;
+}
+
+#suma #napisSuma{
+    margin-left: 2%;
+    width: 30%;
+    float: left;
+}
+
+#suma #zaplata{
+    width:  50%;
+    float: right;
+}

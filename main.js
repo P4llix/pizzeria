@@ -81,12 +81,14 @@ function showSlides() {
 
 
 function dodawanie(x){
-
+    
     document.getElementById("zamowienie").innerHTML += x+" zł<br>";
 
 
     var rob = document.getElementById("zaplata").innerHTML;
     
-    document.getElementById("zaplata").innerHTML = Number(rob) + parseFloat(x);;
+    ostatnie = Number(rob) + parseFloat(x);
+    document.getElementById("zaplata").innerHTML = ostatnie.toFixed(2);
+    
 }
 
