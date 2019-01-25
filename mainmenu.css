@@ -8,7 +8,6 @@ body{
 a:link{
     text-decoration: none;
     color: white;
-
 }
 
 /* navbar */
@@ -80,6 +79,41 @@ a:link{
     cursor: pointer;
 }
 
+.lewy .liczenie{
+    padding-top: 10vh;
+    font-size: 17px;
+    overflow: hidden;
+    transition: .5s;
+    opacity: 0;
+    display: inline-block;
+}
+
+.lewy .liczenie input{
+    border: none;
+    border-radius: 15px;
+    padding: 2%;
+    margin-top: 2%;
+}
+
+.lewy .liczenie button{
+    border: none;
+    height: 7vh;
+    width: 12vw;
+    margin-top: 4vh;
+    background-color: black;
+    color: #d35400;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    border: 1px solid #d35400;
+    transition: 0.4s;
+}
+
+.lewy .liczenie button:hover{
+    background-color: rgba(10, 10, 10, 0);
+
+}
+
+
 /* prawy */
 .prawy{
     width: 20%;
@@ -102,9 +136,35 @@ a:link{
     font-size: 20px;
 }
 
-.prawy a{
+.prawy .linki:link{
     color: white;
     cursor: pointer;
+}
+
+.prawy ol li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* środkowy */
+
+
+.srodkowy{
+    width: 60%;
+    float: left;
+    color: white;
+    height: 100%;
+}
+
+.srodkowy .promocje{
+    width: 90%;
+    padding: 0;
+    margin: 0;
+    margin: 4% 5% 3%;
+    padding: 50px 0px 50px;
+    text-align: center;
+    font-size: 35px;
+    background-color: rgba(10, 10, 10, 0.8);
 }
 
 
@@ -140,4 +200,68 @@ footer a{
         flex: 3; /* powiększenie 3/12 */
         order: 3;
     }
+}
+
+
+
+
+
+#zdj1, #zdj2, #zdj3{
+    width: 40vw;
+    height: 50vh;
+    
+}
+
+
+.slideshow-container {
+    width:40vw;
+    position: relative;
+    margin: auto;
+    border: 1px solid black;
+    height: 50vh;
+}
+
+.mySlides {
+    
+    display: none;
+    text-align: center;
+}
+
+.text {
+    color: white;
+    background-color: rgba(10, 10, 10, 0.8);
+    font-size: 30px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px 10px;
+}
+
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* animacje */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 0.2}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: 0.2};
+    to {opacity: 1}
 }

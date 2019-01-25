@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Pizzeria Margherita - menu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="mainmenu.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -20,24 +20,107 @@
 
     <div class="main">
         <div class="lewy">
-            
+            <p>Menu</p>
+            <ol>
+                <li>Pizza</li>
+                <li>Lasagne</li>
+                <li>Sałatki</li>
+                <li>Napoje</li>
+            </ol>
         </div>
 
 
 
         <div class="srodkowy">
+            <div class="tlo-tab">
+            <table border="0" cellpadding="10" cellspacing="1">
+                <tr>
+                    <td>Lp</td>
+                    <td>Nazwa</td>
+                    <td>Mała</td>
+                    <td>Średnia</td>
+                    <td>Duża</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <p class="nazwa">pizza CAPRICIOSA</p>
+                        <p class="opis">szynka, pieczarki, sos pomidorowy</p>
+                    </td>
+                    <td><a class="cena" onclick="dodawanie('29.70')">29,70 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('35.80')"> 35,80 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('49.90')"> 49,80 zł</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <p class="nazwa">pizza KEBAB </p>
+                        <p class="opis"> kurczak gyros, cebula, sos Gyros </p>
+                    </td>
+                    <td><a class="cena" onclick="dodawanie('35,60')">35,60 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('42,40')">42,40 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('56,40')">56,40 zl</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <p class="nazwa">pizza PEPERONI  </p>
+                        <p class="opis">salami, cebula, sos pomidorowy </p>
+                    </td>
+                    <td><a class="cena" onclick="dodawanie('30,20')">30,20 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('35,60')">35,60 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('49,60')">49,60 zł</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>
+                        <p class="nazwa"> pizza HAWAJSKA</p>
+                        <p class="opis"> szynka, ananas, sos pomidorowy </p>
+                    </td>
+                    <td><a class="cena" onclick="dodawanie('32,90')">32,90 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('39,40')">39,40 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('53,40')">53,40 zł</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>
+                        <p class="nazwa">pizza CARBONARA </p>
+                        <p class="opis"> boczek, cebula, pieczarki (sos śmietankowy) </p>
+                    </td>
+                    <td><a class="cena" onclick="dodawanie('36,20')">36,20 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('43,40')">43,40 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('57,40')">57,40 zł</a></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>
+                        <p class="nazwa">pizza BARBECUE</p>
+                        <p class="opis"> boczek, kurczak gyros, cebula, sos Barbecue </p>
+                    </td>
+                    <td><a class="cena" onclick="dodawanie('35,40')"> 35,40 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('42,20')"> 42,20 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('56,20')"> 56,20 zł</a></td>
+                </tr>
+                              
+            </table>
         </div>
+    </div>
+        
+    
 
 
 
         <div class="prawy">
+            <div id="zamowienie"></div>
+            <div id="zaplata"></div>
         </div>
     </div>
+    
 
 
 
 <div class="stopka">
-    <footer>
+    <footer id="footer">
         <a id="zegar"></a>
         <a id="twr">&copy;Mikołaj Jarek</a>
     </footer>

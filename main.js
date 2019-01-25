@@ -76,3 +76,20 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 6000);
 } 
+
+
+
+
+function dodawanie(x){
+
+   function wyswietlanie(){
+        document.getElementById("zamowienie").innerHTML += x+" zł<br>";
+   }
+   wyswietlanie(x);
+   parseFloat(x);
+   eval(x);
+   var suma = 0;
+   suma += Number(x);
+   document.getElementById("zaplata").innerHTML = suma;
+}
+

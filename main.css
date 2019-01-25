@@ -265,3 +265,49 @@ footer a{
     from {opacity: 0.2};
     to {opacity: 1}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MENU  */
+
+
+.tlo-tab{
+    background-color: rgba(10, 10, 10, 0.8);
+    width:50vw;
+    position: relative;
+    margin: auto;
+    margin-top: 2vh;
+}
+
+.tlo-tab table{
+
+    margin: auto;
+    position: relative;
+}
+
+.nazwa{
+    font-size: 20px;
+}
+
+.opis{
+    font-size: 15px;
+    font-style: italic;
+}
+
+table{
+    font-size: 18px;
+}
+
+.cena{
+    cursor: pointer;
+}
