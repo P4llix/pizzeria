@@ -80,15 +80,19 @@ function showSlides() {
 
 
 
-function dodawanie(x){
+function dodawanie(x, y){
     
-    document.getElementById("zamowienie").innerHTML += x+" zł<br>";
-
+    document.getElementById("zamowienie").innerHTML += y + " - " + x+" zł <i class='fas fa-times' onClick='usuwanie()'></i><br>";
+    
 
     var rob = document.getElementById("zaplata").innerHTML;
     
     ostatnie = Number(rob) + parseFloat(x);
     document.getElementById("zaplata").innerHTML = ostatnie.toFixed(2);
+    console.log(indeksy);
     
 }
 
+function usuwanie(){
+    this.remove();
+}

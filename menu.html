@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -47,9 +48,9 @@
                         <p class="nazwa">pizza CAPRICIOSA</p>
                         <p class="opis">szynka, pieczarki, sos pomidorowy</p>
                     </td>
-                    <td><a class="cena" onclick="dodawanie('29.70')">29,70 zł</a></td>
-                    <td><a class="cena" onclick="dodawanie('35.80')">35,80 zł</a></td>
-                    <td><a class="cena" onclick="dodawanie('49.80')">49,80 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('29.70','pizza CAPRICIOSA (mała)')">29,70 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('35.80','pizza CAPRICIOSA (średnia)')">35,80 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('49.80','pizza CAPRICIOSA (duża)')">49,80 zł</a></td>
                 </tr>
                 <tr>
                     <td>2</td>
@@ -57,9 +58,9 @@
                         <p class="nazwa">pizza KEBAB </p>
                         <p class="opis"> kurczak gyros, cebula, sos Gyros </p>
                     </td>
-                    <td><a class="cena" onclick="dodawanie('35.60')">35,60 zł</a></td>
-                    <td><a class="cena" onclick="dodawanie('42.40')">42,40 zł</a></td>
-                    <td><a class="cena" onclick="dodawanie('56.40')">56,40 zl</a></td>
+                    <td><a class="cena" onclick="dodawanie('35.60','pizza KEBAB (mała)')">35,60 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('42.40','pizza KEBAB (średnia)')">42,40 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('56.40','pizza KEBAB (duża)')">56,40 zl</a></td>
                 </tr>
                 <tr>
                     <td>3</td>
@@ -67,9 +68,9 @@
                         <p class="nazwa">pizza PEPERONI  </p>
                         <p class="opis">salami, cebula, sos pomidorowy </p>
                     </td>
-                    <td><a class="cena" onclick="dodawanie('30.20')">30,20 zł</a></td>
-                    <td><a class="cena" onclick="dodawanie('35.60')">35,60 zł</a></td>
-                    <td><a class="cena" onclick="dodawanie('49.60')">49,60 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('30.20','pizza PEPERONI (mała)')">30,20 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('35.60','pizza PEPERONI (średnia)')">35,60 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('49.60','pizza PEPERONI (duża)')">49,60 zł</a></td>
                 </tr>
                 <tr>
                     <td>4</td>
@@ -77,9 +78,9 @@
                         <p class="nazwa"> pizza HAWAJSKA</p>
                         <p class="opis"> szynka, ananas, sos pomidorowy </p>
                     </td>
-                    <td><a class="cena" onclick="dodawanie('32.90')">32,90 zł</a></td>
-                    <td><a class="cena" onclick="dodawanie('39.40')">39,40 zł</a></td>
-                    <td><a class="cena" onclick="dodawanie('53.40')">53,40 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('32.90','pizza HAWAJSKA (mała)')">32,90 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('39.40','pizza HAWAJSKA (średnia)')">39,40 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('53.40','pizza HAWAJSKA (duża)')">53,40 zł</a></td>
                 </tr>
                 <tr>
                     <td>5</td>
@@ -87,9 +88,9 @@
                         <p class="nazwa">pizza CARBONARA </p>
                         <p class="opis"> boczek, cebula, pieczarki (sos śmietankowy) </p>
                     </td>
-                    <td><a class="cena" onclick="dodawanie('36.20')">36,20 zł</a></td>
-                    <td><a class="cena" onclick="dodawanie('43.40')">43,40 zł</a></td>
-                    <td><a class="cena" onclick="dodawanie('57.40')">57,40 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('36.20','pizza CARBONARA (mała)')">36,20 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('43.40','pizza CARBONARA (średnia)')">43,40 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('57.40','pizza CARBONARA (duża)')">57,40 zł</a></td>
                 </tr>
                 <tr>
                     <td>6</td>
@@ -97,9 +98,9 @@
                         <p class="nazwa">pizza BARBECUE</p>
                         <p class="opis"> boczek, kurczak gyros, cebula, sos Barbecue </p>
                     </td>
-                    <td><a class="cena" onclick="dodawanie('35.40')"> 35,40 zł</a></td>
-                    <td><a class="cena" onclick="dodawanie('42.20')"> 42,20 zł</a></td>
-                    <td><a class="cena" onclick="dodawanie('56.20')"> 56,20 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('35.40','pizza BARBECUE (mała)')"> 35,40 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('42.20','pizza BARBECUE (średnia)')"> 42,20 zł</a></td>
+                    <td><a class="cena" onclick="dodawanie('56.20','pizza BARBECUE (duża)')"> 56,20 zł</a></td>
                 </tr>
                               
             </table>
@@ -111,10 +112,10 @@
 
 
         <div class="prawy">
-            <div id="zamowienie"></div>
+                Zamówienie: <div id="zamowienie"></div>
                 <div id="suma">
                     <div id="napisSuma">Suma: </div>
-                    <div id="zaplata"></div>
+                    <div id="zaplata"></div> 
                 </div>
         </div>
     </div>
