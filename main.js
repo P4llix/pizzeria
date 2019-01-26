@@ -82,7 +82,7 @@ function showSlides() {
 
 function dodawanie(x, y){
     
-    document.getElementById("zamowienie").innerHTML += y + " - " + x+" zł <i class='fas fa-times' onClick='usuwanie()'></i><br>";
+    document.getElementById("zamowienie").innerHTML += y + " - " + x+" zł <br>";
     
 
     var rob = document.getElementById("zaplata").innerHTML;

@@ -319,6 +319,7 @@ table{
     border-top: 1px solid white;
     width: 20%;
     padding-top: 2vh;
+
 }
 
 #suma #napisSuma{
@@ -332,3 +333,6 @@ table{
     float: right;
 }
 
+#zamowienie{
+    line-height: 5vh;
+}
